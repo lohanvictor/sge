@@ -1,0 +1,68 @@
+.item:hover {
+  //width: 33.5em !important;
+  //height: 13.4em !important;
+  background-color: #e6ebf2;
+
+  i {
+    color: #2a5a48;
+  }
+}
+
+.item {
+  transition-property: width, height, background-color;
+  transition-duration: 0.4s;
+}
+
+.evenly {
+  justify-content: space-evenly !important;
+}
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+  .body-fetch.d-flex.justify-content-center.align-items-center {
+    display: flex;
+    flex-direction: column;
+  }
+  .card.item.shadow {
+    width: 22rem !important;
+    height: max-content !important;
+    cursor: pointer !important;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 767.98px) { 
+  .body-fetch.d-flex.justify-content-center.align-items-center {
+    display: flex;
+    flex-direction: column;
+  }
+  .uea-logo {
+    width: 100%;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+  .body-fetch.d-flex.justify-content-center.align-items-center {
+    display: flex;
+    flex-direction: column;
+  }
+  .uea-logo {
+    width: 80%;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+  .uea-logo {
+    width: rem;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+  .uea-logo {
+    width: 25rem;
+  }
+}
